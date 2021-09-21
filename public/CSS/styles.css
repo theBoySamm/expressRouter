@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.custom-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.name-flex{
+    display: flex;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  color: #FFF;
+  margin-bottom: 2rem;
+  background-color: brown;
+  border-radius: 0.3rem;
+}
