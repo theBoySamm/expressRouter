@@ -9,10 +9,10 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
 const homeRoute = require("./routes/homeRoute")
-const userRoute = require("./routes/userRoute")
+const userRoute = require("./routes/reviewRoute")
 
 app.use("/", homeRoute)
-app.use("/users", userRoute);
+app.use("/reviews", userRoute);
 
 
 
@@ -24,8 +24,8 @@ app.use("/users", userRoute);
 
 
 
-const PORT = 3000;
-app.listen(process.env.PORT || 3000, () => {
+const PORT = 5000;
+app.listen(process.env.PORT || 5000, () => {
   "Server started on port " + PORT;
 });
 connectDB()
