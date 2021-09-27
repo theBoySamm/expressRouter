@@ -9,10 +9,10 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
 const homeRoute = require("./routes/homeRoute")
-const userRoute = require("./routes/reviewRoute")
+const reviewRoute = require("./routes/reviewRoute")
 
 app.use("/", homeRoute)
-app.use("/reviews", userRoute);
+app.use("/reviews", reviewRoute);
 
 
 
