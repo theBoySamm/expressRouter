@@ -1,9 +1,8 @@
-const mongoose = require("mongoose");
 const Fruit = require("../models/User.model");
 
 module.exports.collectReview = async (req, res) => {
   const { fname, lname, rating, text } = req.body;
-  console.log(fname, lname, rating, text);
+  // console.log(fname, lname, rating, text);
 
   // Creates a new fruit
   const fruit = new Fruit({
